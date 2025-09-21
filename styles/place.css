@@ -67,6 +67,11 @@ section h2 {
     gap: 0.5rem;
 }
 
+.weather img {
+    width: 40px;
+
+}
+
 footer {
     text-align: center;
     margin-top: 2rem;
