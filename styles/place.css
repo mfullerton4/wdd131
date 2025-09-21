@@ -1,0 +1,75 @@
+/* Global Variables */
+:root {
+    --primary-color: #e60012;
+    --secondary-color: #ffffff;
+    --accent-color: #f2f2f2;
+    --font-family: 'Segoe UI', sans-serif;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--accent-color);
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+section {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}

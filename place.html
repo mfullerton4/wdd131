@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Mark Fullerton">
+    <title>Country Page</title>
+
+        <!--css Files-->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+        <!--JavaScript-->
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <H1>Japan</H1>
+    </header>
+
+    
+    <!--Main Content Layout-->
+    <main>
+        <!--Hero Section With Responsive Image-->
+        <section class="hero">
+            <picture>
+                <source srcset="images/japan-hero.webp" media="(min-width: 768px)"/>
+                <source srcset="images/japan-medium.webp" media="(min-width: 480px)" />
+                <img src="images/Japan-small.webp" alt="Scenic view of Japan"/>
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <p>Area: <span id="area">145.94K mi&sup2;</span></p>
+                <p>Population: <span id="population">122,960,162</span></p>
+                <p>Capital: <span id="capital">Tokyo</span></p>
+                <p>Languages: <span id="languages">Japanese</span></p>
+                <p>Currency: <span id="currency">Japanese yen</span></p>
+                <p>Time Zone: <span id="timezone">UTC+9</span></p>
+                <p>Calling Code: <span id="callingcode">+81</span></p>
+                <p>Internet TLD: <span id="internettld">.jp</span></p>
+            </section>
+            <section class="weather">
+                <div class="weather-header">
+                    <h2>Weather</h2>
+                    <img src="images/weather.svg" alt="Weather icon" width="60" height="60"/> 
+                </div>
+                <p>Temperature: <span id="temp">50&deg;F</span></p>
+                <p>Conditions: <span id="conditions">Partly Cloudy</span></p>
+                <p>Wind speed: <span id="wind">5 mph</span></p>
+                <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+            </section>
+        </section>
+        </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Mark Fullerton, Utah, USA</p>
+    
+        <P id="lastmodified"></P>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
