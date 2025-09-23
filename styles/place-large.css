@@ -24,7 +24,7 @@
     .weather {
         position: absolute;
         bottom: 2rem;
-        left: 610px;
+        left: 940px;
         background-color: rgba(0, 0, 0, 0.6);
         color: white;
         padding: 1rem;
@@ -47,4 +47,7 @@
         color: white;
     }
     
+    .data-header {
+        color: white;
+    }
 }
