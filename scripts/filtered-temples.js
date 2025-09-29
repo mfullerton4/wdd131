@@ -101,7 +101,7 @@ function createTempleCard(temple) {
     <p><strong>Dedication:</strong> ${temple.dedicated}</p>
     <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
      `;
-    
+
     return card;
 }
 
@@ -122,7 +122,7 @@ function displayTemples(filter = "home") {
             filteredTemples = temples.filter(t => t.area > 9000);
             break;
         case "small":
-            filteredTemples = temples.filter(t => t.area <10000);
+            filteredTemples = temples.filter(t => t.area < 10000);
             break;
         case "home":
         default:
