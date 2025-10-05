@@ -26,6 +26,15 @@ const products = [
     }
 ];
 
+let count = localStorage.getItem("reviewCount") || 0;
+count++;
+localStorage.setItem(reviewCount, count);
+
+const reviewCountElement = document.getElementById("reviewCount");
+if (reviewCountElement) {
+    reviewCountElement.textContent = `You have submitted ${count} review(s).`;
+}
+
 const selectElement = document.getElementById("productName");
 products.forEach(product => {
     const option = document.createElement("option");
