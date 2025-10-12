@@ -89,3 +89,94 @@ footer {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+/*groups*/
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(#ffffff);
+    color: var(--text);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--header-text);
+    color: var(--text);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-family: var(--body-text);
+    font-weight: bold;
+    color: var(--text);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;   
+}
+
+input:focus,
+select:focus {
+    border-color: var(--highlight);
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--highlight);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent);
+}
+
+/*information*/
+.rpg-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.rpg-card {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-left: 5px solid #3498db;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, )0.1;
+    transition: transform 0.2s ease;
+}
+
+.rpg-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
